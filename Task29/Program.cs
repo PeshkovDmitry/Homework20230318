@@ -7,6 +7,8 @@ void GetArray(int[] array) {
     }
 }
 Console.Clear();
-int[] array = new int[8];
+Console.Write("Сколько ячеек будет в массиве: ");
+int size = Convert.ToInt32(Console.ReadLine());
+int[] array = new int[size];
 GetArray(array);
 Console.WriteLine($"[{String.Join(", ",array)}]");
